@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MvpExample
+//  MvcExample
 //
-//  Created by swamnx on 14.05.21.
+//  Created by swamnx on 29.04.21.
 //
 
 import UIKit
