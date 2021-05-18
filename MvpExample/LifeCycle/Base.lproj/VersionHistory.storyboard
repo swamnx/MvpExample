@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="-1023.75" y="-604.22535211267609"/>
         </scene>
-        <!--Image View Controller-->
+        <!--Full Image View Controller-->
         <scene sceneID="YLl-ec-LKR">
             <objects>
-                <viewController storyboardIdentifier="ImageViewController" id="Wsl-Cf-tSR" customClass="ImageViewController" customModule="MvpExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullImageViewController" id="Wsl-Cf-tSR" customClass="FullImageViewController" customModule="MvpExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6vH-ve-0hR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

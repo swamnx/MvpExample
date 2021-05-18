@@ -35,9 +35,17 @@ extension VersionHistoryController: VersionHistoryView {
     }
     
     func openImage(_ image: UIImage) {
-        guard let imageViewController = self.storyboard!.instantiateViewController(withIdentifier: "ImageViewController") as? ImageViewController else {return}
-        imageViewController.presenter = ImagePresenter(image: image)
-        self.present(imageViewController, animated: true, completion: nil)
+        guard let fullImageViewController = self.storyboard!.instantiateViewController(withIdentifier: "FullImageViewController") as? FullImageViewController else {return}
+        fullImageViewController.presenter = FullImagePresenter(image: image)
+        self.present(fullImageViewController, animated: true, completion: nil)
+    }
+    
+    func showBasicErrorAlert(message: String) {
+        let alert = UIAlertController(title: CommonUtils.ErrorTexts.basicErrorTitle.rawValue,
+                                    message: message,
+                                    preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: CommonUtils.ActionTexts.ok.rawValue, style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 extension VersionHistoryController: UITableViewDelegate, UITableViewDataSource {

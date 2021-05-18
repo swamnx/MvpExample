@@ -12,4 +12,5 @@ protocol VersionHistoryView {
     
     func updateVersionHistoryWith(data: [VersionInfo])
     func openImage(_ data: UIImage)
+    func showBasicErrorAlert(message: String)
 }

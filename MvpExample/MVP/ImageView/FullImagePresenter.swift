@@ -8,25 +8,25 @@
 import Foundation
 import UIKit.UIImage
 
-class ImagePresenter {
+class FullImagePresenter {
     
     var image: UIImage
-    var imageView: ImageView?
+    var view: FullImageView?
     
     init (image: UIImage) {
         self.image = image
     }
     
-    func attachView(view: ImageView) {
-        imageView = view
+    func attachView(view: FullImageView) {
+        self.view = view
     }
    
     func detachView() {
-        imageView = nil
+        view = nil
     }
     
     func viewDidLoad() {
-        imageView?.showImage(image: image)
+        view?.showImage(image: image)
     }
     
 }

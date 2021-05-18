@@ -8,6 +8,6 @@
 import Foundation
 import UIKit.UIImage
 
-protocol ImageView {
+protocol FullImageView {
     func showImage(image: UIImage)
 }

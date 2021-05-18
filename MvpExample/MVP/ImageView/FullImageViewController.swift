@@ -7,10 +7,10 @@
 
 import Foundation
 import UIKit
-class ImageViewController: UIViewController {
+class FullImageViewController: UIViewController {
 
     @IBOutlet weak var versionImage: UIImageView!
-    var presenter: ImagePresenter!
+    var presenter: FullImagePresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class ImageViewController: UIViewController {
     }
 
 }
-extension ImageViewController: ImageView {
+extension FullImageViewController: FullImageView {
     
     func showImage(image: UIImage) {
         versionImage.image = image
